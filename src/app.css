@@ -1,3 +1,6 @@
+/* === Tailwind === */
 @import 'tailwindcss';
 
-
+/* === Skeleton === */
+@import '@skeletonlabs/skeleton';
+@import '../custom_theme.css';

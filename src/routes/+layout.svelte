@@ -1,14 +1,12 @@
 <script>
 	import '../app.css';
-	import { Header } from "$lib/components/header.svelte"
-	import { Footer } from "$lib/components/footer.svelte"
+	import Header from "$lib/components/header.svelte"
+	import Footer from "$lib/components/footer.svelte"
 
 	let title = 'SvelteKit App';
 </script>
 
-<svelte:head>
-	<title>{title}</title>
-</svelte:head>
+
 
 <div class="grid h-screen grid-rows-[auto_1fr_auto]">
 	<!-- Header -->

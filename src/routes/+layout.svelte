@@ -8,7 +8,7 @@
 
 <div class="grid h-screen grid-rows-[auto_1fr_auto]">
 	<!-- Header -->
-	<header class="sticky top-0 z-10 bg-red-500/80 p-4 backdrop-blur-sm">
+	<header class="sticky top-0 z-10 p-4">
 		<Header />
 	</header>
 

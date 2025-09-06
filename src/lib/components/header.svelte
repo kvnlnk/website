@@ -4,14 +4,14 @@
 
 <AppBar classes="px-10" trailClasses="space-x-4 items-center">
 	{#snippet lead()}
-		<h2 class="h2">Portfolio</h2>
+		<h2 class="h2 text-success-500">dev.portfolio</h2>
 	{/snippet}
 
 	{#snippet trail()}
-		<a href="/" class="transition-colors hover:text-success-500">Home</a>
-		<a href="/projects" class="transition-colors hover:text-success-500">Projects</a>
-		<a href="/github" class="transition-colors hover:text-success-500">GitHub</a>
-		<a href="/contact" class="transition-colors hover:text-success-500">Contact</a>
+		<a href="#home" class="transition-colors hover:text-success-500">Home</a>
+		<a href="#projects" class="transition-colors hover:text-success-500">Projects</a>
+		<a href="#github" class="transition-colors hover:text-success-500">GitHub</a>
+		<a href="#contact" class="transition-colors hover:text-success-500">Contact</a>
 	{/snippet}
 </AppBar>
 

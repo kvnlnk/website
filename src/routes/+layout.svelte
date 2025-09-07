@@ -6,19 +6,19 @@
 	let title = 'SvelteKit App';
 </script>
 
-<div class="grid h-screen grid-rows-[auto_1fr_auto]">
+<div class="grid grid-rows-[auto_1fr_auto] ">
 	<!-- Header -->
-	<header class="sticky top-0 z-10 p-4">
+	<header class="sticky top-0 z-10 p-4 bg-surface-900 shadow-md">
 		<Header />
 	</header>
 
 	<!-- Main -->
-	<main class="">
+	<main class="w-full">
 		<slot />
 	</main>
-
+	
 	<!-- Footer -->
-	<footer class="bg-blue-500 p-4">
+	<footer class="bg-surface-900 shadow-md p-4">
 		<Footer />
 	</footer>
 </div>

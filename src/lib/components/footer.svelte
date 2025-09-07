@@ -7,9 +7,9 @@
 
 <div class="flex flex-col items-center gap-y-6 py-4">
     <div class="flex flex-row gap-4">
-        <a target="_blank" href="mailto:{ email }">E-Mail</a>
-        <a target="_blank" href={github}>GitHub</a>
-        <a target="_blank" href={linkedIn}>LinkedIn</a>
+        <a target="_blank" href="mailto:{ email }" class="transition-colors hover:text-success-500">E-Mail</a>
+        <a target="_blank" href={github} class="transition-colors hover:text-success-500">GitHub</a>
+        <a target="_blank" href={linkedIn} class="transition-colors hover:text-success-500">LinkedIn</a>
     </div>
     <div>
         <p class="text-center text-sm">

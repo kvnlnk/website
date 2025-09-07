@@ -6,9 +6,9 @@
 	let title = 'SvelteKit App';
 </script>
 
-<div class="grid grid-rows-[auto_1fr_auto] ">
+<div class="grid grid-rows-[auto_1fr_auto]">
 	<!-- Header -->
-	<header class="sticky top-0 z-10 p-4 bg-surface-900 shadow-md">
+	<header class="sticky top-0 z-10 bg-surface-900 p-4 shadow-md">
 		<Header />
 	</header>
 
@@ -16,9 +16,9 @@
 	<main class="w-full">
 		<slot />
 	</main>
-	
+
 	<!-- Footer -->
-	<footer class="bg-surface-900 shadow-md p-4">
+	<footer class="bg-surface-900 p-4 shadow-md">
 		<Footer />
 	</footer>
 </div>

@@ -1,5 +1,5 @@
-<div class="h-full w-full space-y-4 overflow-y-auto bg-green-500 p-4">
-	<div class="h-[512px] bg-purple-500">1</div>
-	<div class="h-[512px] bg-purple-500 p-4">2</div>
-	<div class="h-[512px] bg-purple-500 p-4">3</div>
+<div class="h-full w-full overflow-y-auto bg-green-500">
+	<div class="h-screen bg-surface-950 p-4">Name</div>
+	<div class="h-[512px] bg-surface-900 p-4">Projects</div>
+	<div class="h-[512px] bg-surface-950 p-4">GitHub</div>
 </div>

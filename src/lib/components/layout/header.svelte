@@ -7,10 +7,10 @@
 		<h2 class="h2 text-success-500">dev.portfolio</h2>
 	</div>
 	<div>
-		<a href="#home" class="transition-colors hover:text-success-500 text-white">Home</a>
-		<a href="#projects" class="transition-colors hover:text-success-500 text-white">Projects</a>
-		<a href="#github" class="transition-colors hover:text-success-500 text-white">GitHub</a>
-		<a href="#contact" class="transition-colors hover:text-success-500 text-white">Contact</a>
+		<a href="#home" class="text-white transition-colors hover:text-success-500">Home</a>
+		<a href="#projects" class="text-white transition-colors hover:text-success-500">Projects</a>
+		<a href="#github" class="text-white transition-colors hover:text-success-500">GitHub</a>
+		<a href="#contact" class="text-white transition-colors hover:text-success-500">Contact</a>
 	</div>
 </div>
 

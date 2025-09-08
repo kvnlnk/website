@@ -1,1 +1,1 @@
-<p>GitHub Section</p>
+<p id="github">GitHub Section</p>

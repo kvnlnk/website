@@ -8,7 +8,7 @@
 
 <div class="grid grid-rows-[auto_1fr_auto]">
 	<!-- Header -->
-	<header class="sticky top-0 z-10 bg-surface-950 p-4 shadow-2xl border-b border-gray-800">
+	<header class="sticky top-0 z-10 border-b border-gray-800 bg-surface-950 p-4 shadow-2xl">
 		<Header />
 	</header>
 

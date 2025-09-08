@@ -5,3 +5,30 @@
 @import '@skeletonlabs/skeleton';
 @import '../custom_theme.css';
 @custom-variant dark (&:where(.dark, .dark *));
+
+/* === Custom Animations === */
+@keyframes semi-rotate {
+	0% {
+		transform: rotate(var(--rotate-start));
+	}
+	50% {
+		transform: rotate(var(--rotate-middle));
+	}
+	100% {
+		transform: rotate(var(--rotate-end));
+	}
+}
+
+@layer utilities {
+	.animate-semi-rotate {
+		--rotate-start: -15deg;
+		--rotate-middle: 180deg;
+		--rotate-end: -30deg;
+
+		--origin-x: 75%;
+		--origin-y: 25%;
+
+		animation: semi-rotate 6s ease-in-out infinite alternate;
+		transform-origin: var(--origin-x) var(--origin-y);
+	}
+}

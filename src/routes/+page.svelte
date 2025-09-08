@@ -1,8 +1,8 @@
 <script>
 	// Import sections of the main page
-	import Landing from "$lib/components/sections/landing.svelte";
-	import Projects from "$lib/components/sections/projects.svelte";
-	import GitHub from "$lib/components/sections/github.svelte";
+	import Landing from '$lib/components/sections/landing.svelte';
+	import Projects from '$lib/components/sections/projects.svelte';
+	import GitHub from '$lib/components/sections/github.svelte';
 </script>
 
 <div class="h-full w-full overflow-y-auto bg-green-500">

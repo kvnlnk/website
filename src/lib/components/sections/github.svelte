@@ -12,9 +12,30 @@
 		I share all my open-source projects, contributions, and experiments on GitHub. Feel free to
 		explore and let's build something together!
 	</p>
-	<a target="_blank" href={GITHUB} class="b rounded px-4 py-2 transition-colors">
-		<span class="text">View GitHub Profile</span>
-	</a>
+	<div class="flex w-full flex-col items-center">
+		<!-- Stats -->
+		<div class="mt-8 grid w-full max-w-xl grid-cols-3 gap-10 text-center">
+			<div class="flex flex-col items-center gap-2">
+				<p class="text-4xl text-success-500">3+</p>
+				<p>Repositories</p>
+			</div>
+			<div class="flex flex-col items-center gap-2">
+				<p class="text-4xl text-success-500">500+</p>
+				<p>Commits</p>
+			</div>
+			<div class="flex flex-col items-center gap-2">
+				<p class="text-4xl text-success-500">0</p>
+				<p>Stars</p>
+			</div>
+		</div>
+
+		<!-- Button -->
+		<div class="mt-8">
+			<a target="_blank" href={GITHUB} class="b rounded px-8 py-4 text-lg transition-colors">
+				<span class="text">View GitHub Profile</span>
+			</a>
+		</div>
+	</div>
 </div>
 
 <style>

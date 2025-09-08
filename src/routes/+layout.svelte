@@ -1,14 +1,14 @@
 <script>
 	import '../app.css';
-	import Header from '$lib/components/header.svelte';
-	import Footer from '$lib/components/footer.svelte';
+	import Header from '$lib/components/layout/header.svelte';
+	import Footer from '$lib/components/layout/footer.svelte';
 
 	let title = 'SvelteKit App';
 </script>
 
 <div class="grid grid-rows-[auto_1fr_auto]">
 	<!-- Header -->
-	<header class="sticky top-0 z-10 bg-surface-950 p-4 shadow-md">
+	<header class="sticky top-0 z-10 bg-surface-950 p-4 shadow-2xl border-b border-gray-800">
 		<Header />
 	</header>
 
@@ -18,7 +18,7 @@
 	</main>
 
 	<!-- Footer -->
-	<footer class="bg-surface-950 p-4 shadow-md">
+	<footer class="bg-surface-900 p-4 shadow-md">
 		<Footer />
 	</footer>
 </div>

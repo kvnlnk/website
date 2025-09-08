@@ -4,3 +4,4 @@
 /* === Skeleton === */
 @import '@skeletonlabs/skeleton';
 @import '../custom_theme.css';
+@custom-variant dark (&:where(.dark, .dark *));

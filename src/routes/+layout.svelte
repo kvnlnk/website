@@ -4,7 +4,7 @@
 	import Footer from '$lib/components/layout/footer.svelte';
 
 	import { injectAnalytics } from '@vercel/analytics/sveltekit';
-	let title = 'SvelteKit App';
+	injectAnalytics({ mode: dev ? 'development' : 'production' });
 </script>
 
 <div class="grid grid-rows-[auto_1fr_auto]">

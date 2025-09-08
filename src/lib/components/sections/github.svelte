@@ -1,1 +1,63 @@
-<p id="github">GitHub Section</p>
+<script>
+	import { GITHUB } from '$lib/config.js';
+</script>
+
+<div class="flex h-full w-full flex-col items-center justify-center gap-4" id="github">
+	<h2
+		class="bg-gradient-to-r from-white via-success-500 to-success-500 bg-clip-text p-4 text-5xl font-bold whitespace-nowrap text-transparent"
+	>
+		Discover my code
+	</h2>
+	<p class="max-w-xl text-center text-lg text-surface-300">
+		I share all my open-source projects, contributions, and experiments on GitHub. Feel free to
+		explore and let's build something together!
+	</p>
+	<div class="flex w-full flex-col items-center">
+		<!-- Stats -->
+		<div class="mt-8 grid w-full max-w-xl grid-cols-3 gap-10 text-center">
+			<div class="flex flex-col items-center gap-2">
+				<p class="text-4xl text-success-500">3+</p>
+				<p>Repositories</p>
+			</div>
+			<div class="flex flex-col items-center gap-2">
+				<p class="text-4xl text-success-500">500+</p>
+				<p>Commits</p>
+			</div>
+			<div class="flex flex-col items-center gap-2">
+				<p class="text-4xl text-success-500">0</p>
+				<p>Stars</p>
+			</div>
+		</div>
+
+		<!-- Button -->
+		<div class="mt-8">
+			<a target="_blank" href={GITHUB} class="b rounded px-8 py-4 text-lg transition-colors">
+				<span class="text">View GitHub Profile</span>
+			</a>
+		</div>
+	</div>
+</div>
+
+<style>
+	.b {
+		background: linear-gradient(to right, white 50%, var(--color-success-600) 50%);
+		background-size: 200% 100%;
+		background-position: right bottom;
+		transition: all 0.5s ease-out;
+	}
+
+	.b:hover {
+		background-position: left bottom;
+	}
+
+	.text {
+		color: white;
+	}
+	.b:hover {
+		box-shadow: 0 2px 16px var(--color-success-500);
+	}
+
+	.b:hover .text {
+		color: var(--color-success-500);
+	}
+</style>

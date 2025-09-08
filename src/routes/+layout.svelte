@@ -3,8 +3,8 @@
 	import Header from '$lib/components/layout/header.svelte';
 	import Footer from '$lib/components/layout/footer.svelte';
 
-	import { injectAnalytics } from '@vercel/analytics/sveltekit'
-	let title = 'SvelteKit App';
+	import { injectAnalytics } from '@vercel/analytics/sveltekit';
+	injectAnalytics({ mode: 'production' });
 </script>
 
 <div class="grid grid-rows-[auto_1fr_auto]">

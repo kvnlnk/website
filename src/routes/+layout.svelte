@@ -3,6 +3,7 @@
 	import Header from '$lib/components/layout/header.svelte';
 	import Footer from '$lib/components/layout/footer.svelte';
 
+	import { injectAnalytics } from '@vercel/analytics/sveltekit'
 	let title = 'SvelteKit App';
 </script>
 

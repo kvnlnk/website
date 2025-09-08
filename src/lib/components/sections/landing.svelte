@@ -18,12 +18,12 @@
 				and creating solutions that are efficient,<br />
 				user-friendly, and maintainable.
 			</p>
-			<div
-				class="animate-semi-rotate pointer-events-none absolute flex w-fit translate-x-50 items-center justify-center p-4 text-5xl text-success-500 opacity-10"
-				style="--rotate-start: 180deg; --rotate-middle: 360deg; --rotate-end: 170deg; --origin-x:55%; --origin-y:45%;"
-			>
-				{'λ'}
-			</div>
+            <div
+            class="animate-semi-rotate pointer-events-none absolute flex w-fit translate-x-60 items-center justify-center p-4 text-5xl text-success-500 opacity-10"
+            style="--rotate-start: -90deg; --rotate-middle: 90deg; --rotate-end: -120deg; --origin-x:50%; --origin-y:50%;"
+            >
+            {'λ'}
+            </div>
 
 			<!-- Add buttons for navigation -->
 			<div class="mt-8 flex flex-row gap-4 p-4">

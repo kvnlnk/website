@@ -4,9 +4,9 @@
 
 <div class="flex h-full w-full flex-row items-center justify-between px-10">
 	<div>
-		<h2 class="h2 text-success-500">dev.portfolio</h2>
+		<h2 class="h2 text-success-500 text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl">dev.portfolio</h2>
 	</div>
-	<div>
+	<div class="hidden md:block">
 		<a href="#home" class="text-white transition-colors hover:text-success-500">Home</a>
 		<a href="#projects" class="text-white transition-colors hover:text-success-500">Projects</a>
 		<a href="#github" class="text-white transition-colors hover:text-success-500">GitHub</a>

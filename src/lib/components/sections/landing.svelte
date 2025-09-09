@@ -1,8 +1,9 @@
 <div class="flex h-full w-full" id="home">
-	<div class="m-auto flex h-3/4 w-2/3 rounded-lg p-4">
+	<div class="m-auto flex h-3/4 md:w-2/3 w-full rounded-lg p-4">
 		<div class="flex-1">
 			<p
-				class="bg-gradient-to-r from-white via-success-500 to-success-500 bg-clip-text p-4 text-9xl font-bold text-transparent"
+				class="bg-gradient-to-r from-white via-success-500 to-success-500 bg-clip-text p-4
+				text-2xl sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl font-bold text-transparent"
 			>
 				Kevin Lingk
 			</p>
@@ -12,12 +13,10 @@
 			>
 				<span class="font-mono text-3xl sm:text-4xl md:text-5xl font-light tracking-wider whitespace-nowrap">{'{}'}</span>
 			</div>
-			<p class="mt-4 p-4 text-3xl text-surface-400">Computer Science Student</p>
-			<p class="mt-4 p-4 text-xl">
-				I enjoy developing applications <br />
-				and creating solutions that are efficient,<br />
-				user-friendly, and maintainable.
-			</p>
+			<p class="mt-4 p-4 text-lg sm:text-xl md:text-2xl lg:text-3xl text-surface-400">Computer Science Student</p>
+<p class="mt-4 p-4 text-sm sm:text-base md:text-lg lg:text-xl break-words max-w-prose">
+  I enjoy developing applications and creating solutions that are efficient, user-friendly, and maintainable.
+</p>
 			<div
 				class="animate-semi-rotate pointer-events-none absolute flex w-fit translate-x-60 items-center justify-center p-4 text-5xl text-success-500 opacity-10"
 				style="--rotate-start: -90deg; --rotate-middle: 90deg; --rotate-end: -120deg; --origin-x:50%; --origin-y:50%;"
@@ -26,11 +25,11 @@
 			</div>
 
 			<!-- Add buttons for navigation -->
-			<div class="mt-8 flex flex-row gap-4 p-4">
-				<a href="#projects" class="b1 rounded px-4 py-2 transition-colors">
+			<div class="mt-8 flex flex-col sm:flex-row gap-4 p-4 ">
+				<a href="#projects" class="b1 rounded px-4 py-2 transition-colors text-center">
 					<span class="text1">View Projects</span>
 				</a>
-				<a href="#github" class="b2 rounded px-4 py-2 transition-colors">
+				<a href="#github" class="b2 rounded px-4 py-2 transition-colors text-center">
 					<span class="text2">View GitHub</span>
 				</a>
 			</div>

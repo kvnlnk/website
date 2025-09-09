@@ -32,7 +32,11 @@
 
 		<!-- Button -->
 		<div class="mt-8 mb-8">
-			<a target="_blank" href={GITHUB} class="b rounded px-8 py-4 text-lg transition-colors">
+			<a
+				target="_blank"
+				href={GITHUB}
+				class="b rounded px-4 py-3 text-sm transition-colors sm:px-6 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg"
+			>
 				<span class="text">View GitHub Profile</span>
 			</a>
 		</div>

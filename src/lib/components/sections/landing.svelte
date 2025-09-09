@@ -2,7 +2,7 @@
 	<div class="m-auto flex h-3/4 w-2/3 rounded-lg p-4">
 		<div class="flex-1">
 			<p
-				class="bg-gradient-to-r from-white via-success-500 to-success-500 bg-clip-text p-4 text-9xl font-bold whitespace-nowrap text-transparent"
+				class="bg-gradient-to-r from-white via-success-500 to-success-500 bg-clip-text p-4 text-9xl font-bold text-transparent"
 			>
 				Kevin Lingk
 			</p>
@@ -10,7 +10,7 @@
 				class="animate-semi-rotate pointer-events-none absolute flex w-fit items-center justify-center p-4 text-5xl text-success-500 opacity-10"
 				style="--rotate-start: -15deg; --rotate-middle: 180deg; --rotate-end: -30deg;  --origin-x:55%; --origin-y:45%;"
 			>
-				{'{}'}
+				<span class="font-mono text-3xl sm:text-4xl md:text-5xl font-light tracking-wider whitespace-nowrap">{'{}'}</span>
 			</div>
 			<p class="mt-4 p-4 text-3xl text-surface-400">Computer Science Student</p>
 			<p class="mt-4 p-4 text-xl">
@@ -22,7 +22,7 @@
 				class="animate-semi-rotate pointer-events-none absolute flex w-fit translate-x-60 items-center justify-center p-4 text-5xl text-success-500 opacity-10"
 				style="--rotate-start: -90deg; --rotate-middle: 90deg; --rotate-end: -120deg; --origin-x:50%; --origin-y:50%;"
 			>
-				{'λ'}
+				<span class="font-mono text-3xl sm:text-4xl md:text-5xl font-light tracking-wider whitespace-nowrap">{'λ'}</span>
 			</div>
 
 			<!-- Add buttons for navigation -->
@@ -35,12 +35,12 @@
 				</a>
 			</div>
 		</div>
-		<div class="flex flex-1 items-end justify-center">
+		<div class="flex  items-end justify-center">
 			<div
-				class="animate-semi-rotate pointer-events-none flex w-fit items-center justify-center p-4 text-5xl text-success-500 opacity-10"
+				class="animate-semi-rotate pointer-events-none flex w-fit items-center justify-center p-2 text-3xl sm:p-4 sm:text-4xl md:text-5xl text-success-500 opacity-10"
 				style="--rotate-start: 15deg; --rotate-middle: -180deg; --rotate-end: 55deg; --origin-x:45%; --origin-y:55%;"
 			>
-				<span class="font-mono text-5xl font-light tracking-wider">{'</>'}</span>
+				<span class="font-mono text-3xl sm:text-4xl md:text-5xl font-light tracking-wider whitespace-nowrap">{'</>'}</span>
 			</div>
 		</div>
 	</div>

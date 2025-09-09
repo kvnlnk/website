@@ -67,7 +67,7 @@
 	}
 
 	.b2 {
-		background: linear-gradient(to right, white 50%, var(--color-success-600) 50%);
+		background: linear-gradient(to right, white 49.9%, var(--color-success-600) 50%);
 		background-size: 200% 100%;
 		background-position: right bottom;
 		transition: all 0.5s ease-out;

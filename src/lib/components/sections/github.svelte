@@ -4,11 +4,12 @@
 
 <div class="flex h-full w-full flex-col items-center justify-center gap-4" id="github">
 	<h2
-		class="bg-gradient-to-r from-white via-success-500 to-success-500 bg-clip-text p-4 text-5xl font-bold whitespace-nowrap text-transparent"
+		class="bg-gradient-to-r from-white via-success-500 to-success-500 bg-clip-text p-4 text-2xl
+		font-bold whitespace-nowrap text-success-500 text-transparent sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl 2xl:text-6xl"
 	>
 		Discover my code
 	</h2>
-	<p class="max-w-xl text-center text-lg text-surface-300">
+	<p class="max-w-xl text-center text-sm text-surface-300 sm:text-base md:text-lg">
 		I share all my open-source projects, contributions, and experiments on GitHub. Feel free to
 		explore and let's build something together!
 	</p>
@@ -16,22 +17,26 @@
 		<!-- Stats -->
 		<div class="mt-8 grid w-full max-w-xl grid-cols-3 gap-10 text-center">
 			<div class="flex flex-col items-center gap-2">
-				<p class="text-4xl text-success-500">3+</p>
-				<p>Repositories</p>
+				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">3+</p>
+				<p class="text-sm sm:text-base">Repos</p>
 			</div>
 			<div class="flex flex-col items-center gap-2">
-				<p class="text-4xl text-success-500">500+</p>
-				<p>Commits</p>
+				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">500+</p>
+				<p class="text-sm sm:text-base">Commits</p>
 			</div>
 			<div class="flex flex-col items-center gap-2">
-				<p class="text-4xl text-success-500">0</p>
-				<p>Stars</p>
+				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">0</p>
+				<p class="text-sm sm:text-base">Stars</p>
 			</div>
 		</div>
 
 		<!-- Button -->
 		<div class="mt-8 mb-8">
-			<a target="_blank" href={GITHUB} class="b rounded px-8 py-4 text-lg transition-colors">
+			<a
+				target="_blank"
+				href={GITHUB}
+				class="b rounded px-4 py-3 text-sm transition-colors sm:px-6 sm:py-3 sm:text-base md:px-8 md:py-4 md:text-lg"
+			>
 				<span class="text">View GitHub Profile</span>
 			</a>
 		</div>

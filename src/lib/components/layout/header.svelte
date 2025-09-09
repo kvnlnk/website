@@ -10,7 +10,7 @@
 			dev.portfolio
 		</h2>
 	</div>
-	<div class="hidden md:block">
+	<div class="hidden md:grid md:grid-cols-2 md:gap-x-4 md:gap-y-2 lg:flex lg:flex-row lg:space-x-4">
 		<a href="#home" class="text-white transition-colors hover:text-success-500">Home</a>
 		<a href="#projects" class="text-white transition-colors hover:text-success-500">Projects</a>
 		<a href="#github" class="text-white transition-colors hover:text-success-500">GitHub</a>

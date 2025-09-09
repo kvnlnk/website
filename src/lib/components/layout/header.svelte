@@ -2,10 +2,10 @@
 	import { AppBar } from '@skeletonlabs/skeleton-svelte';
 </script>
 
-<div class="flex h-full w-full flex-row items-center justify-between px-10">
-	<div>
+<div class="flex h-full w-full flex-row items-center justify-between md:px-10">
+	<div class="w-full text-center md:text-left lg:w-auto">
 		<h2
-			class="h2 text-2xl text-success-500 sm:text-3xl md:text-4xl lg:text-6xl xl:text-8xl 2xl:text-9xl"
+			class="h2 text-2xl text-success-500 sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl 2xl:text-4xl"
 		>
 			dev.portfolio
 		</h2>

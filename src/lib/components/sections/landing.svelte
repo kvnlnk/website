@@ -17,7 +17,10 @@
 				>
 			</div>
 			<p class="mt-4 text-lg text-surface-400 sm:text-xl md:text-2xl lg:text-3xl">
-				Computer Science Student
+				Software Developer
+			</p>
+			<p class="mt-2 text-sm italic text-surface-500 sm:text-base md:text-lg">
+				currently playing with AI and agents
 			</p>
 			<p class="mt-4 w-full max-w-md text-sm sm:text-base md:text-lg">
 				I enjoy developing applications and creating solutions that are efficient, user-friendly,

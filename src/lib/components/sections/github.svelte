@@ -1,5 +1,49 @@
 <script>
-	import { GITHUB } from '$lib/config.js';
+	import { GITHUB, GITHUB_USERNAME } from '$lib/config.js';
+	import { onMount } from 'svelte';
+
+	let repos = $state(0);
+	let stars = $state(0);
+	let totalCommits = $state(0);
+	let followers = $state(0);
+	let loading = $state(true);
+
+	onMount(async () => {
+		try {
+			// Fetch user info
+			const userRes = await fetch(`https://api.github.com/users/${GITHUB_USERNAME}`);
+			const userData = await userRes.json();
+			followers = userData.followers ?? 0;
+			repos = userData.public_repos ?? 0;
+
+			// Fetch repos to calculate stars
+			const reposRes = await fetch(
+				`https://api.github.com/users/${GITHUB_USERNAME}/repos?per_page=100&sort=updated`
+			);
+			const reposData = await reposRes.json();
+			if (Array.isArray(reposData)) {
+				repos = reposData.length;
+				stars = reposData.reduce((sum, r) => sum + (r.stargazers_count || 0), 0);
+			}
+
+			// Estimate commits via GitHub search
+			const commitRes = await fetch(
+				`https://api.github.com/search/commits?q=author:${GITHUB_USERNAME}&per_page=1`
+			);
+			if (commitRes.ok) {
+				const commitData = await commitRes.json();
+				totalCommits = commitData.total_count ?? 500;
+			}
+		} catch (_) {
+			// Fallback to static values on rate limit
+			repos = 12;
+			stars = 0;
+			followers = 1;
+			totalCommits = 500;
+		} finally {
+			loading = false;
+		}
+	});
 </script>
 
 <div class="flex h-full w-full flex-col items-center justify-center gap-4" id="github">
@@ -15,18 +59,46 @@
 	</p>
 	<div class="flex w-full flex-col items-center">
 		<!-- Stats -->
-		<div class="mt-8 grid w-full max-w-xl grid-cols-3 gap-10 text-center">
+		<div class="mt-8 grid w-full max-w-xl grid-cols-4 gap-6 text-center">
 			<div class="flex flex-col items-center gap-2">
-				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">3+</p>
-				<p class="text-sm sm:text-base">Repos</p>
+				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">
+					{#if loading}
+						<span class="animate-pulse text-surface-600">--</span>
+					{:else}
+						{repos}+
+					{/if}
+				</p>
+				<p class="text-xs text-surface-400 sm:text-sm">Repos</p>
 			</div>
 			<div class="flex flex-col items-center gap-2">
-				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">500+</p>
-				<p class="text-sm sm:text-base">Commits</p>
+				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">
+					{#if loading}
+						<span class="animate-pulse text-surface-600">--</span>
+					{:else}
+						{totalCommits.toLocaleString()}+
+					{/if}
+				</p>
+				<p class="text-xs text-surface-400 sm:text-sm">Commits</p>
 			</div>
 			<div class="flex flex-col items-center gap-2">
-				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">0</p>
-				<p class="text-sm sm:text-base">Stars</p>
+				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">
+					{#if loading}
+						<span class="animate-pulse text-surface-600">--</span>
+					{:else}
+						{stars}
+					{/if}
+				</p>
+				<p class="text-xs text-surface-400 sm:text-sm">Stars</p>
+			</div>
+			<div class="flex flex-col items-center gap-2">
+				<p class="text-2xl text-success-500 sm:text-3xl md:text-4xl">
+					{#if loading}
+						<span class="animate-pulse text-surface-600">--</span>
+					{:else}
+						{followers}
+					{/if}
+				</p>
+				<p class="text-xs text-surface-400 sm:text-sm">Followers</p>
 			</div>
 		</div>
 

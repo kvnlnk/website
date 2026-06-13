@@ -12,7 +12,7 @@ export const PROJECTS = [
 		title: 'UtilityBelt',
 		description:
 			'A collection of 47 developer tools and 6 cheatsheets — format, encode, convert, debug, visualize. All client-side, no backend.',
-		imgSrc: '/images/projects/utilitybelt.png',
+		imgSrc: '/images/projects/utilitybelt.svg',
 		link: 'https://github.com/kvnlnk/utilitybelt',
 		tags: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Vitest']
 	},
@@ -20,7 +20,7 @@ export const PROJECTS = [
 		title: 'Deutschland Tour',
 		description:
 			'Self-guided GPS-activated audio walking tours through Germany\'s most beautiful cities. Multi-language, PWA-ready.',
-		imgSrc: '/images/projects/deutschland_tour.png',
+		imgSrc: '/images/projects/deutschland_tour.svg',
 		link: 'https://github.com/kvnlnk/deutschland-tour',
 		tags: ['React', 'TypeScript', 'Leaflet', 'Express', 'PostgreSQL']
 	},
@@ -28,7 +28,7 @@ export const PROJECTS = [
 		title: 'stacylize',
 		description:
 			'Multi-language stack trace beautifier. Pipe in ugly JS/Python/Java traces, get colorized, collapsed, scannable output.',
-		imgSrc: '/images/projects/stacylize.png',
+		imgSrc: '/images/projects/stacylize.svg',
 		link: 'https://github.com/kvnlnk/stacylize',
 		tags: ['Node.js', 'Commander', 'Chalk', 'CLI']
 	},
@@ -36,7 +36,7 @@ export const PROJECTS = [
 		title: 'designtok',
 		description:
 			'Convert JSON design tokens to CSS custom properties, Tailwind config, or SASS — in your browser, no install needed.',
-		imgSrc: '/images/projects/designtok.png',
+		imgSrc: '/images/projects/designtok.svg',
 		link: 'https://github.com/kvnlnk/designtok',
 		tags: ['Vanilla JS', 'HTML/CSS', 'Offline-first']
 	},
@@ -44,7 +44,7 @@ export const PROJECTS = [
 		title: 'crontrans',
 		description:
 			'Bidirectional cron expression translator — turn cryptic schedules into plain English or generate them from natural language.',
-		imgSrc: '/images/projects/crontrans.png',
+		imgSrc: '/images/projects/crontrans.svg',
 		link: 'https://github.com/kvnlnk/crontrans',
 		tags: ['Python', 'argparse', 'pytest', 'CLI']
 	},
@@ -60,7 +60,7 @@ export const PROJECTS = [
 		title: 'Snake Game',
 		description:
 			'Classic Snake game with a dark retro aesthetic — React, Express, SQLite highscore leaderboard.',
-		imgSrc: '/images/projects/snake_game.png',
+		imgSrc: '/images/projects/snake_game.svg',
 		link: 'https://github.com/kvnlnk/snake-game',
 		tags: ['React', 'Express', 'SQLite', 'Canvas']
 	}
